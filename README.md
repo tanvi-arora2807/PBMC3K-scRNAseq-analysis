@@ -24,6 +24,9 @@ The analysis includes quality control, preprocessing, dimensionality reduction, 
 ## Results
 ### UMAP Clustering
 Leiden clustering successfully identified distinct cell populations.
+## UMAP Visualization
+
+![UMAP Clustering](figures/umap_leiden_clusters.png)
 
 ### Marker Genes
 Marker genes were identified for each cluster using Scanpy's rank_genes_groups function.
