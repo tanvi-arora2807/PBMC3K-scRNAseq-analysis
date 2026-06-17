@@ -1,28 +1,60 @@
 # Single Cell RNA-Seq Analysis of PBMC3K Dataset
 
-## Objective
-Analysis of the PBMC3K single-cell RNA sequencing dataset using Scanpy.
+## Overview
+This project demonstrates a complete single-cell RNA sequencing (scRNA-seq) workflow using the PBMC3K dataset and the Scanpy framework.
+
+The analysis includes quality control, preprocessing, dimensionality reduction, clustering, and marker gene identification.
+
+## Dataset
+- Dataset: PBMC3K (Peripheral Blood Mononuclear Cells)
+- Source: 10x Genomics
+- Cells analyzed: ~2700 cells
 
 ## Workflow
 1. Quality control
-2. Filtering
-3. Normalization
+2. Filtering low-quality cells and genes
+3. Data normalization
 4. Highly variable gene selection
-5. PCA
-6. UMAP visualization
-7. Leiden clustering
-8. Marker gene identification
+5. Principal Component Analysis (PCA)
+6. Neighborhood graph construction
+7. UMAP visualization
+8. Leiden clustering
+9. Marker gene identification
 
 ## Results
-- UMAP cluster visualization
-- Marker genes for each cluster
+### UMAP Clustering
+Leiden clustering successfully identified distinct cell populations.
 
-## Tools
+### Marker Genes
+Marker genes were identified for each cluster using Scanpy's rank_genes_groups function.
+
+## Tools and Libraries
 - Python
 - Scanpy
+- AnnData
 - Pandas
 - NumPy
 - Matplotlib
+- Leidenalg
+
+## Repository Structure
+PBMC3K-scRNAseq-analysis/
+│
+├── data/
+├── figures/
+├── notebooks/
+├── results/
+├── README.md
+└── requirements.txt
+## Skills Demonstrated
+- Single-cell RNA-seq analysis
+- Data preprocessing and quality control
+- Dimensionality reduction (PCA, UMAP)
+- Cell clustering
+- Marker gene discovery
+- Python for bioinformatics
+- Git and GitHub version control
 
 ## Author
 Tanvi Arora
+M.Sc.(Ag.) Molecular Biology & Biotechnology
